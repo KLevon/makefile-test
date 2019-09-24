@@ -4,6 +4,6 @@
 
 void print(int a)
 {
-	printf("%d", a);
+	printf("%d\n", a);
 }
 

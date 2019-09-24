@@ -1,4 +1,5 @@
 
+#include <stdio.h>
 #include "complex.h"
 #include "operation.h"
 #include "events.h"
@@ -27,7 +28,8 @@ void main()
 	log_event(EV_PHASE_1);
 	save_event(EV_PHASE_1);
 	
-	print("Nothing is: %d\n", nothing);
+	printf("Nothing is: ");
+	print(nothing);
 	show_all(a,b);
 	print_complex(result);
 	
