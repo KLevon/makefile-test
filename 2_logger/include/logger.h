@@ -1,4 +1,9 @@
 
+#ifndef _LOGGER_H_
+#define _LOGGER_H_
 
-void log_event(int id);
+#include "events.h"
 
+void log_event(Event id);
+
+#endif /* _LOGGER_H_ */

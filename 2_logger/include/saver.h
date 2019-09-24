@@ -1,4 +1,9 @@
 
+#ifndef _SAVER_H_
+#define _SAVER_H_
 
-void save_event(int id);
+#include "events.h"
 
+void save_event(Event id);
+
+#endif /* _SAVER_H_ */
