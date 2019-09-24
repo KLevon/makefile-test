@@ -1,0 +1,47 @@
+
+Project consists of 4 modules. Each module must have its own makefile.
+
+1_complex - use explicit rules
+2_logger  - use implicit rules
+3_printer - use implicit rules
+4_main    - your choice
+
+Project must implement recursive makefile, where main makefile is located in the root folder.
+
+To build a module means to compile all source files and then create a static library for that module
+
+----------------------------------------------------------------------------------------------------
+
+It should be possible to pass make a command line variable DEBUG, if value of that variable is 1,
+make builds debug version, otherwise it builds release version.
+
+debug - all object, library files etc. should be placed into build/debug folder.
+release - all object, library files etc. should be placed into build/release folder.
+
+Make must also have clean functionality - delete all produced artifacts (.obj, .lib etc.).
+
+----------------------------------------------------------------------------------------------------
+
+HELP
+compile source file gcc cmd:
+	gcc -c -fPIC [source_file] -I[headers_path] -o [object_name]
+create archive gcc cmd:
+	ar -rvs [library_name] [list_object_files]
+link libraries and object files
+	gcc [object_files] [library paths with prefix -L] [library names with prefix -l] -o main.exe
+
+----------------------------------------------------------------------------------------------------
+
+Advice:
+Start with main makefile, add functionality to call each make from the main makefile. Implement all
+other makefile starting with module 1 and working sequentially.
+
+----------------------------------------------------------------------------------------------------
+
+Rating:
+1 - 20
+2 - 25
+3 - 25
+4 - 15
+main make - 15
+
