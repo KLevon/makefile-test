@@ -33,7 +33,7 @@ HELP:
    compile source file gcc cmd:
        gcc -c [source_file] -I[headers_path] -o [object_name]
    create archive gcc cmd:
-       ar -rvs [library_name] [list_object_files]
+       ar [library_name] [list_object_files]
    link libraries and object files
        gcc [object_files] [path to libraries with prefix -L] [library names with prefix -l] -o [executable name]
 
